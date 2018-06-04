@@ -1,0 +1,25 @@
+﻿//ADD ROWS DATA
+            ArrayList row = new ArrayList();
+            row.Add("Bánh tự làm (Sốt cà chua,....) - Dòn - Trung");
+            row.Add("1");
+            row.Add("20000");
+            dataGridView1.Rows.Add(row.ToArray());
+
+            row = new ArrayList();
+            row.Add("Pizza thịt và xúc xích - Dòn - Nhỏ");
+            row.Add("1");
+            row.Add("109000");
+            dataGridView1.Rows.Add(row.ToArray());
+
+            row = new ArrayList();
+            row.Add("Coca Cola");
+            row.Add("1");
+            row.Add("6000");
+            dataGridView1.Rows.Add(row.ToArray());
+
+            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+            btn.Name = "button";
+            btn.Text = "X";
+            btn.HeaderText = "HỦY";
+            btn.UseColumnTextForButtonValue = true;
+            dataGridView1.Columns.Add(btn);
